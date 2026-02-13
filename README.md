@@ -21,7 +21,7 @@ Backend services are deployed using Render and securely integrated with the fron
 ![Movies Page](showza-homebody.png)
 
 ### Seat Booking Interface
-![Seat Booking](assets/booking.png)
+![Seat Booking](showza-seats.png)
 
 ### Generated Ticket with QR Code
 ![Ticket Page](assets/ticket.png)
