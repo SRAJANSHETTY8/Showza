@@ -3,11 +3,11 @@
 Showza is a full-stack movie ticket booking web application that allows users to browse movies, reserve seats, complete bookings, and generate QR-based digital tickets.
 
 ---
-
 ## Live Application
 
 Frontend: https://showza.netlify.app  
-Backend API Docs: https://showza-vlhs.onrender.com/docs  
+
+Backend services are deployed using Render and securely integrated with the frontend through authenticated REST APIs.
 
 ---
 
