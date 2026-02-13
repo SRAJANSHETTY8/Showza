@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="logo">
+                    <span class="logo-text">SHOWZA</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="movie.html">MOVIES</a></li>
+                    <li><a href="mybookings.html">MY BOOKINGS</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div id="profileContainer" class="profile-container" style="display:none;">
+
+                    <div id="profileAvatar" class="profile-avatar">
+                        AS
+                    </div>
+
+                    <div id="profileDropdown" class="profile-dropdown">
+
+                        <p id="profileEmail"></p>
+
+                        <button id="logoutBtn">Logout</button>
+
+                    </div>
+
+                </div>
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <a href="login.html">
+                    <button id="signinbtn" class="sign-in-btn">
+                        <i class="fas fa-user"></i>
+                        Log In
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+   
+    <main class="main-container">
+        
+        <div class="page-header">
+            <h1 class="page-title">Payment</h1>
+            <div class="timer-display">
+                Seats held for <span class="timer" id="countdown">09:14</span>
+            </div>
+        </div>
+
+        <div class="content-grid">
+            
+            <section class="payment-left">
+                
+                <div class="demo-warning">
+                    Do not enter original card details. This is a demo payment page.
+                </div>
+
+                
+                <div class="payment-form-container">
+                    <h2 class="form-heading">Card Details</h2>
+                    <form id="payment-form">
+                        <div class="card-form">
+
+                            <div class="input-group">
+                                <input type="text" class="form-input" id="card-number" placeholder="Card Number (Demo)"
+                                    maxlength="19">
+                            </div>
+
+                            <div class="input-group">
+                                <input type="text" class="form-input" id="card-holder" placeholder="Card Holder Name">
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+
+                
+                <button type="button" class="pay-btn" id="pay-btn" disabled>
+                    Pay ₹ <span id="pay-amount">0</span>
+                </button>
+
+            </section>
+
+            
+            <aside class="payment-right">
+                <div class="summary-card">
+                    <div class="movie-header">
+                        <div class="movie-thumb">
+                            <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?w=150&h=200&fit=crop"
+                                alt="Eclipse Rising">
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-name">Eclipse Rising</h3>
+                            <p class="theatre-name">INOX Megaplex</p>
+                            <p class="show-details">Sun, 16 Feb • 7:30 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="ticket-details">
+                        <div class="detail-row">
+                            <span class="label">3 Tickets</span>
+                            <span class="value">G7, G8, G9</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Subtotal</span>
+                            <span class="value">₹1050</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Convenience Fee</span>
+                            <span class="value">₹49.5</span>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="total-row">
+                        <span class="total-label">Total</span>
+                        <span class="total-value">₹1171.41</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+   
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="spinner"></div>
+        <p>Processing Payment...</p>
+    </div>
+
+    
+    <div class="modal-overlay" id="success-modal">
+        <div class="success-content">
+            <div class="success-icon">✓</div>
+            <h2>Payment Successful!</h2>
+            <p>Your tickets have been booked.</p>
+            <button class="view-tickets-btn">View Tickets</button>
+        </div>
+    </div>
+
+    <script src="js/payment.js"></script>
+</body>
+
+</html>

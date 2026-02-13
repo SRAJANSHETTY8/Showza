@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="preload" as="image" href="img/poster1.png">
+    <link rel="preload" as="image" href="img/poster2.png">
+    <link rel="preload" as="image" href="img/poster3.png">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="logo">
+                    <span class="logo-text">SHOWZA</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="movie.html">MOVIES</a></li>
+                    <li><a href="mybookings.html">MY BOOKINGS</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div id="profileContainer" class="profile-container" style="display:none;">
+
+                    <div id="profileAvatar" class="profile-avatar">
+                        AS
+                    </div>
+
+                    <div id="profileDropdown" class="profile-dropdown">
+
+                        <p id="profileEmail"></p>
+
+                        <button id="logoutBtn">Logout</button>
+
+                    </div>
+
+                </div>
+                <a href="login.html">
+                    <button id="signinbtn" class="sign-in-btn">
+                        <i class="fas fa-user"></i>
+                        Log In
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="logo-container">
+
+        <div class="logo-circle">
+            <img src="img/logo.png" alt="SHOWZA Logo">
+        </div>
+
+        <h2 class="logo-name">SHOWZA</h2>
+
+    </div>
+
+    
+    <div class="about-box">
+
+        <h1>About Us</h1>
+
+        <p>
+            Showza is a modern movie ticket booking platform designed to make cinema experiences fast, simple, and
+            secure.
+            Users can explore movies, select seats, book tickets instantly, and access digital QR tickets seamlessly.
+        </p>
+
+    </div>
+
+    <p class="tagline">~SRAJAN SHETTY</p>
+    <script src="js/aboutus.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieInfo</title>
+    <link rel="stylesheet" href="css/movieinfo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+<nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="logo">
+                    <span class="logo-text">SHOWZA</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="movie.html">MOVIES</a></li>
+                    <li><a href="mybookings.html">MY BOOKINGS</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="location-selector">
+                    <select class="city-dropdown">
+                        <option>Bengaluru</option>
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Hyderabad</option>
+                        <option>Chennai</option>
+                        <option>Kolkata</option>
+                        <option>Pune</option>
+                        <option>Ahmedabad</option>
+                        <option>Jaipur</option>
+                        <option>Lucknow</option>
+                        <option>Chandigarh</option>
+                        <option>Indore</option>
+                        <option>Bhopal</option>
+                        <option>Surat</option>
+                        <option>Nagpur</option>
+                        <option>Patna</option>
+                        <option>Ranchi</option>
+                        <option>Varanasi</option>
+                        <option>Kanpur</option>
+                        <option>Agra</option>
+                        <option>Meerut</option>
+                        <option>Amritsar</option>
+                        <option>Ludhiana</option>
+                        <option>Jalandhar</option>
+                        <option>Dehradun</option>
+                        <option>Shimla</option>
+                        <option>Panaji</option>
+                        <option>Mangaluru</option>
+                        <option>Mysuru</option>
+                        <option>Hubballi</option>
+                        <option>Belagavi</option>
+                        <option>Vijayawada</option>
+                        <option>Visakhapatnam</option>
+                        <option>Tirupati</option>
+                        <option>Warangal</option>
+                        <option>Coimbatore</option>
+                        <option>Madurai</option>
+                        <option>Salem</option>
+                        <option>Tiruchirappalli</option>
+                        <option>Kochi</option>
+                        <option>Thiruvananthapuram</option>
+                        <option>Kozhikode</option>
+                        <option>Thrissur</option>
+                        <option>Guwahati</option>
+                        <option>Shillong</option>
+                        <option>Imphal</option>
+                        <option>Itanagar</option>
+                        <option>Aizawl</option>
+                        <option>Gangtok</option>
+                        <option>Bhavnagar</option>
+                        <option>Rajkot</option>
+                        <option>Vadodara</option>
+                        <option>Nashik</option>
+                        <option>Aurangabad</option>
+                        <option>Kolhapur</option>
+                        <option>Solapur</option>
+                        <option>Udaipur</option>
+                        <option>Jodhpur</option>
+                        <option>Kota</option>
+                        <option>Ajmer</option>
+                    </select>
+                </div>
+                <div id="profileContainer" class="profile-container" style="display:none;">
+
+                    <div id="profileAvatar" class="profile-avatar">
+                        AS
+                    </div>
+
+                    <div id="profileDropdown" class="profile-dropdown">
+
+                        <p id="profileEmail"></p>
+
+                        <button id="logoutBtn">Logout</button>
+
+                    </div>
+
+                </div>
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <a href="login.html">
+                    <button id="signinbtn" class="sign-in-btn">
+                        <i class="fas fa-user"></i>
+                        Log In
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                
+                <span id="movieGenre" class="tag tag-secondary"></span>
+
+
+                
+                <h1 class="movie-title">
+                    <span id="movieTitleWhite" class="title-white"></span>
+                    <span id="movieTitleAccent" class="title-accent"></span>
+                </h1>
+
+
+
+                
+                <div class="movie-meta">
+                    <div class="meta-item rating">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                        </svg>
+                        <span class="meta-text"><strong id="movieRating"></strong></span>
+                    </div>
+                    <div class="meta-item duration">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                        <span id="movieDuration"></span>
+                    </div>
+                    <div class="meta-item year">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                        <span id="movieYear"></span>
+                    </div>
+                </div>
+
+                
+                <p id="movieDescription" class="movie-description"></p>
+
+                
+                <div class="action-buttons">
+                    <button class="btn btn-primary btn-watch">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                        Watch Trailer
+                    </button>
+                    <button class="btn btn-secondary btn-book">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                            <path d="M8 14h.01" />
+                            <path d="M12 14h.01" />
+                            <path d="M16 14h.01" />
+                            <path d="M8 18h.01" />
+                            <path d="M12 18h.01" />
+                            <path d="M16 18h.01" />
+                        </svg>
+                        Book Tickets
+                    </button>
+                </div>
+            </div>
+
+            
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <img id="moviePoster" class="hero-image">
+
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="trending">
+        <div class="trending-header">
+            <h2 class="trending-title">Trending Now</h2>
+            <a href="movie.html" class="view-all">View All →</a>
+        </div>
+
+        <div class="movies-grid" id="trendingContainer">
+        </div>
+    </section>
+
+    <script src="js/movieinfo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOWZA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="logo">
+                    <span class="logo-text">SHOWZA</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="movie.html">MOVIES</a></li>
+                    <li><a href="mybookings.html">MY BOOKINGS</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="location-selector">
+                    <select class="city-dropdown">
+                        <option>Bengaluru</option>
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Hyderabad</option>
+                        <option>Chennai</option>
+                        <option>Kolkata</option>
+                        <option>Pune</option>
+                        <option>Ahmedabad</option>
+                        <option>Jaipur</option>
+                        <option>Lucknow</option>
+                        <option>Chandigarh</option>
+                        <option>Indore</option>
+                        <option>Bhopal</option>
+                        <option>Surat</option>
+                        <option>Nagpur</option>
+                        <option>Patna</option>
+                        <option>Ranchi</option>
+                        <option>Varanasi</option>
+                        <option>Kanpur</option>
+                        <option>Agra</option>
+                        <option>Meerut</option>
+                        <option>Amritsar</option>
+                        <option>Ludhiana</option>
+                        <option>Jalandhar</option>
+                        <option>Dehradun</option>
+                        <option>Shimla</option>
+                        <option>Panaji</option>
+                        <option>Mangaluru</option>
+                        <option>Mysuru</option>
+                        <option>Hubballi</option>
+                        <option>Belagavi</option>
+                        <option>Vijayawada</option>
+                        <option>Visakhapatnam</option>
+                        <option>Tirupati</option>
+                        <option>Warangal</option>
+                        <option>Coimbatore</option>
+                        <option>Madurai</option>
+                        <option>Salem</option>
+                        <option>Tiruchirappalli</option>
+                        <option>Kochi</option>
+                        <option>Thiruvananthapuram</option>
+                        <option>Kozhikode</option>
+                        <option>Thrissur</option>
+                        <option>Guwahati</option>
+                        <option>Shillong</option>
+                        <option>Imphal</option>
+                        <option>Itanagar</option>
+                        <option>Aizawl</option>
+                        <option>Gangtok</option>
+                        <option>Bhavnagar</option>
+                        <option>Rajkot</option>
+                        <option>Vadodara</option>
+                        <option>Nashik</option>
+                        <option>Aurangabad</option>
+                        <option>Kolhapur</option>
+                        <option>Solapur</option>
+                        <option>Udaipur</option>
+                        <option>Jodhpur</option>
+                        <option>Kota</option>
+                        <option>Ajmer</option>
+                    </select>
+                </div>
+                <div id="profileContainer" class="profile-container" style="display:none;">
+
+                    <div id="profileAvatar" class="profile-avatar">
+                        AS
+                    </div>
+
+                    <div id="profileDropdown" class="profile-dropdown">
+
+                        <p id="profileEmail"></p>
+
+                        <button id="logoutBtn">Logout</button>
+
+                    </div>
+
+                </div>
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <a href="login.html">
+                    <button id="signinbtn" class="sign-in-btn">
+                        <i class="fas fa-user"></i>
+                        Log In
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="hero-section">
+        <div class="carousel-container">
+            <button class="carousel-arrow left"><i class="fas fa-chevron-left"></i></button>
+
+            <div class="carousel-slide active">
+                <div class="slide-content">
+                    <img src="img/poster1.png" alt="Movie">
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <img src="img/poster2.png" alt="Movie">
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <img src="img/poster3.png" alt="Movie">
+                </div>
+            </div>
+
+            <button class="carousel-arrow right"><i class="fas fa-chevron-right"></i></button>
+
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="search-bar-container reveal" id="searchSection">
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search for Movies, Events, Plays, Sports and Activities">
+        </div>
+    </div>
+
+    
+    <section class="movies-section reveal">
+        <div class="section-header">
+            <div class="title-group">
+                <h2>NOW SHOWING</h2>
+                <p>Book your favorite movies today</p>
+            </div>
+            <a href="movie.html" class="see-all">See All <i class="fas fa-chevron-right"></i></a>
+        </div>
+
+        <div class="movies-carousel">
+            <button class="nav-arrow left"><i class="fas fa-chevron-left"></i></button>
+
+            <div class="movies-grid" id="moviesContainer">
+
+            </div>
+
+            <button class="nav-arrow right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    
+    <section class="movies-section recommended reveal">
+        <div class="section-header">
+            <div class="title-group">
+                <h2>Recommended Movies</h2>
+            </div>
+            <a href="movie.html" class="see-all">
+                See All <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+        <div class="movies-carousel">
+            <button class="nav-arrow left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            
+            <div class="movies-grid" id="recommendedContainer">
+            </div>
+
+            <button class="nav-arrow right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    
+    <footer class="footer reveal">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="logo">
+                <span class="footertext">SHOWZA</span>
+            </div>
+
+            <div class="footer-links">
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="aboutus.html">About Us</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <a href="https://github.com/SRAJANSHETTY8">Contact Us</a>
+                    <a href="https://github.com/SRAJANSHETTY8">Help Center</a>
+                </div>
+            </div>
+            <p>&copy; 2026 SHOWZA. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Movies</title>
+    <link rel="stylesheet" href="css/movies.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="logo">
+                    <span class="logo-text">SHOWZA</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="movie.html">MOVIES</a></li>
+                    <li><a href="mybookings.html">MY BOOKINGS</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="location-selector">
+                    <select class="city-dropdown">
+                        <option>Bengaluru</option>
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Hyderabad</option>
+                        <option>Chennai</option>
+                        <option>Kolkata</option>
+                        <option>Pune</option>
+                        <option>Ahmedabad</option>
+                        <option>Jaipur</option>
+                        <option>Lucknow</option>
+                        <option>Chandigarh</option>
+                        <option>Indore</option>
+                        <option>Bhopal</option>
+                        <option>Surat</option>
+                        <option>Nagpur</option>
+                        <option>Patna</option>
+                        <option>Ranchi</option>
+                        <option>Varanasi</option>
+                        <option>Kanpur</option>
+                        <option>Agra</option>
+                        <option>Meerut</option>
+                        <option>Amritsar</option>
+                        <option>Ludhiana</option>
+                        <option>Jalandhar</option>
+                        <option>Dehradun</option>
+                        <option>Shimla</option>
+                        <option>Panaji</option>
+                        <option>Mangaluru</option>
+                        <option>Mysuru</option>
+                        <option>Hubballi</option>
+                        <option>Belagavi</option>
+                        <option>Vijayawada</option>
+                        <option>Visakhapatnam</option>
+                        <option>Tirupati</option>
+                        <option>Warangal</option>
+                        <option>Coimbatore</option>
+                        <option>Madurai</option>
+                        <option>Salem</option>
+                        <option>Tiruchirappalli</option>
+                        <option>Kochi</option>
+                        <option>Thiruvananthapuram</option>
+                        <option>Kozhikode</option>
+                        <option>Thrissur</option>
+                        <option>Guwahati</option>
+                        <option>Shillong</option>
+                        <option>Imphal</option>
+                        <option>Itanagar</option>
+                        <option>Aizawl</option>
+                        <option>Gangtok</option>
+                        <option>Bhavnagar</option>
+                        <option>Rajkot</option>
+                        <option>Vadodara</option>
+                        <option>Nashik</option>
+                        <option>Aurangabad</option>
+                        <option>Kolhapur</option>
+                        <option>Solapur</option>
+                        <option>Udaipur</option>
+                        <option>Jodhpur</option>
+                        <option>Kota</option>
+                        <option>Ajmer</option>
+                    </select>
+                </div>
+                <div id="profileContainer" class="profile-container" style="display:none;">
+
+                    <div id="profileAvatar" class="profile-avatar">
+                        AS
+                    </div>
+
+                    <div id="profileDropdown" class="profile-dropdown">
+
+                        <p id="profileEmail"></p>
+
+                        <button id="logoutBtn">Logout</button>
+
+                    </div>
+
+                </div>
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <a href="login.html">
+                    <button id="signinbtn" class="sign-in-btn">
+                        <i class="fas fa-user"></i>
+                        Log In
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Top Movies</h1>
+            <p class="hero-subtitle">Discover the best in cinema</p>
+        </div>
+        <div class="hero-glow"></div>
+    </header>
+
+   
+    <section id="action" class="movie-section">
+        <div class="section-header">
+            <h2 class="section-title">Action</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="movies-grid" id="actionContainer"></div>
+    </section>
+
+    
+    <section id="scifi" class="movie-section">
+        <div class="section-header">
+            <h2 class="section-title">Sci-Fi</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="movies-grid" id="scifiContainer"></div>
+    </section>
+
+    
+    <section id="romance" class="movie-section">
+        <div class="section-header">
+            <h2 class="section-title">Romance</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="movies-grid" id="romanceContainer"></div>
+    </section>
+
+    
+    <section id="thriller" class="movie-section">
+        <div class="section-header">
+            <h2 class="section-title">Thriller</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="movies-grid" id="thrillerContainer"></div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="logo">
+                <span class="footertext">SHOWZA</span>
+            </div>
+
+            <div class="footer-links">
+
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="aboutus.html">About Us</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <a href="https://github.com/SRAJANSHETTY8">Contact Us</a>
+                    <a href="https://github.com/SRAJANSHETTY8">Help Center</a>
+                </div>
+
+            </div>
+            <p>&copy; 2026 SHOWZA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/movie.js"></script>
+</body>
+
+</html>
