@@ -15,7 +15,7 @@ Backend services are deployed using Render and securely integrated with the fron
 ## Application Screenshots
 
 ### Home Page
-![Home Page](assets/home.png)
+![Home Page](showza-home.png)
 
 ### Movie Listing
 ![Movies Page](assets/movies.png)
