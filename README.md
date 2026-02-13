@@ -103,4 +103,4 @@ Backend manages authentication, database operations, seat concurrency handling, 
 
 ## Author
 
-Developed by [Your Name]
+Developed by Srajan Shetty
