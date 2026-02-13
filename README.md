@@ -35,6 +35,9 @@ Backend services are deployed using Render and securely integrated with the fron
 ### Payment Page
 ![Payment Page](showza-payment.png)
 
+### About Me
+![About Me Page](showza-aboutus.png)
+
 
 
 ---
