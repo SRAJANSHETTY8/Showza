@@ -6,7 +6,7 @@ Showza is a full-stack movie ticket booking web application that allows users to
 
 ## Live Application
 
-Frontend: https://showza.netlify.app  
+Frontend:https://showza-omega.vercel.app/
 
 Backend services are deployed using Render and securely integrated with the frontend through authenticated REST APIs.
 
