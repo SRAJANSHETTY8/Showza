@@ -31,6 +31,7 @@ app=FastAPI()
 origins=[
     "http://127.0.0.1:5500",
     "https://showza.netlify.app",
+    "https://showza-omega.vercel.app",
     "http://localhost:5500"
 ]
 app.add_middleware(
