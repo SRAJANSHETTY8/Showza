@@ -57,7 +57,7 @@ async function loadShowtimeData(movieId, city) {
 
         
         const movieRes = await fetch(
-            `http://127.0.0.1:8000/movies/${movieId}`,
+            `https://showza-vlhs.onrender.com/movies/${movieId}`,
             { headers: authHeaders() }
         );
 
@@ -66,7 +66,7 @@ async function loadShowtimeData(movieId, city) {
 
         
         const theatreRes = await fetch(
-            `http://127.0.0.1:8000/theaters/${city}`,
+            `https://showza-vlhs.onrender.com/theaters/${city}`,
             { headers: authHeaders() }
         );
 
@@ -74,7 +74,7 @@ async function loadShowtimeData(movieId, city) {
 
         
         const showtimeRes = await fetch(
-            `http://127.0.0.1:8000/showtimes`,
+            `https://showza-vlhs.onrender.com/showtimes`,
             { headers: authHeaders() }
         );
 

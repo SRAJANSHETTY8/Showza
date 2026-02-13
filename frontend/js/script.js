@@ -185,7 +185,7 @@ async function loadMovies() {
         const token = localStorage.getItem("showza_access_token");
         const city = getSelectedCity();
 
-        const response = await fetch("http://127.0.0.1:8000/movies", {
+        const response = await fetch("https://showza-vlhs.onrender.com/movies", {
             headers: {
                 Authorization: `Bearer ${token}`
             }

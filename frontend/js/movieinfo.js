@@ -71,7 +71,7 @@ async function loadMovieDetails() {
         const token = localStorage.getItem("showza_access_token");
 
         const response = await fetch(
-            `http://127.0.0.1:8000/movies/${movieId}`,
+            `https://showza-vlhs.onrender.com/movies/${movieId}`,
             {
                 headers: { Authorization: `Bearer ${token}` }
             }
@@ -145,7 +145,7 @@ async function loadTrendingMovies() {
 
         const token = localStorage.getItem("showza_access_token");
 
-        const response = await fetch("http://127.0.0.1:8000/movies", {
+        const response = await fetch("https://showza-vlhs.onrender.com/movies", {
             headers: { Authorization: `Bearer ${token}` }
         });
 

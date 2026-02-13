@@ -61,7 +61,7 @@ async function loadShowtime() {
     const showId = getShowId();
     if (!showId) return;
 
-    const res = await fetch("http://127.0.0.1:8000/showtimes");
+    const res = await fetch("https://showza-vlhs.onrender.com/showtimes");
     const shows = await res.json();
 
     const show = shows.find(s => Number(s.id) === Number(showId));
@@ -92,7 +92,7 @@ async function loadShowtime() {
 
 async function loadMovie(movieId) {
 
-    const res = await fetch(`http://127.0.0.1:8000/movies/${movieId}`);
+    const res = await fetch(`https://showza-vlhs.onrender.com/movies/${movieId}`);
     const movie = await res.json();
 
     document.getElementById("moviePoster").src = movie.movie_poster_url;
@@ -109,7 +109,7 @@ async function loadTheatre(theatreId) {
     const city = getCity();
     if (!city) return;
 
-    const res = await fetch(`http://127.0.0.1:8000/theaters/${city}`);
+    const res = await fetch(`https://showza-vlhs.onrender.com/theaters/${city}`);
     const theatres = await res.json();
 
     const theatre = theatres.find(t => Number(t.id) === Number(theatreId));
@@ -123,7 +123,7 @@ async function loadTheatre(theatreId) {
 
 async function loadSeats(showId) {
 
-    const res = await fetch("http://127.0.0.1:8000/seats");
+    const res = await fetch("https://showza-vlhs.onrender.com/seats");
     const allSeats = await res.json();
 
     const seats = allSeats.filter(
@@ -232,7 +232,7 @@ async function toggleSeat(seat, seatDiv) {
     try {
 
         const res = await fetch(
-            `http://127.0.0.1:8000/seatlock/${seat.id}`,
+            `https://showza-vlhs.onrender.com/seatlock/${seat.id}`,
             { method: "POST", headers: authHeaders() }
         );
 

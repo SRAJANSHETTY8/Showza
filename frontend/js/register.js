@@ -23,7 +23,7 @@ if (registerform){
         const password=document.getElementById('passwordInput').value;
         console.log(email);
         console.log(password);
-        fetch("http://127.0.0.1:8000/register",{
+        fetch("https://showza-vlhs.onrender.com/register",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",

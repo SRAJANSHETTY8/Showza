@@ -35,7 +35,7 @@ if (loginForm) {
         formdata.append("password", password);
         formdata.append("grant_type", "password");
 
-        fetch("http://127.0.0.1:8000/login", {
+        fetch("https://showza-vlhs.onrender.com/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
