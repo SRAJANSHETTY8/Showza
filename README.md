@@ -18,7 +18,7 @@ Backend services are deployed using Render and securely integrated with the fron
 ![Home Page](showza-home.png)
 
 ### Movie Listing
-![Movies Page](assets/movies.png)
+![Movies Page](showza-homebody.png)
 
 ### Seat Booking Interface
 ![Seat Booking](assets/booking.png)
