@@ -27,7 +27,7 @@ Backend services are deployed using Render and securely integrated with the fron
 ![Ticket Page](showza-ticket.png)
 
 ### Login Page
-![Login Page](assets/login.png)
+![Login Page](showza-login.png)
 
 ---
 
