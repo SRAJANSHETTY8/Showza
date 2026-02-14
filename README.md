@@ -12,9 +12,9 @@ Use the following demo credentials to explore the application:
 Email: user@test.com
 Password: user123
 
-## This uses a demo payment system.
-## Please do not use real card details. 
-## You can enter any random numbers for testing purposes.
+**This uses a demo payment system**
+**Please do not use real card details**
+**You can enter any random numbers for testing purposes**
 
 Backend services are deployed using Render and securely integrated with the frontend through authenticated REST APIs.
 
